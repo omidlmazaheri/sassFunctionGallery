@@ -1,0 +1,11 @@
+@media (max-width: 992px) {
+  .gallery .item {
+    @include gallery-item(2);
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery .item {
+    @include gallery-item(1);
+  }
+}

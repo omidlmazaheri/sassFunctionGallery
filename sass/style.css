@@ -1,0 +1,72 @@
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -8px;
+}
+
+.gallery .item {
+  width: 25%;
+  padding: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.gallery .item img {
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.gallery .item img:hover {
+  border-color: #3498db;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+@media (max-width: 992px) {
+  .gallery .item {
+    width: 50%;
+    padding: 8px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .gallery .item img {
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .gallery .item img:hover {
+    border-color: #3498db;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery .item {
+    width: 100%;
+    padding: 8px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .gallery .item img {
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .gallery .item img:hover {
+    border-color: #3498db;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+/*# sourceMappingURL=style.css.map */

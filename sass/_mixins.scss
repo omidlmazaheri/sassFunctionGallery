@@ -1,0 +1,17 @@
+@mixin gallery-item($columns) {
+  width: column-width($columns);
+  padding: $gap / 2;
+  box-sizing: border-box;
+
+  img {
+    width: 100%;
+    border: 2px solid map-get($colors, border);
+    border-radius: 8px;
+    transition: 0.3s;
+
+    &:hover {
+      border-color: map-get($colors, hover);
+      transform: scale(1.05);
+    }
+  }
+}

@@ -1,0 +1,3 @@
+@function column-width($columns) {
+  @return 100% / $columns;
+}

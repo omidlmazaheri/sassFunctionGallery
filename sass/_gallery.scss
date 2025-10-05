@@ -1,0 +1,9 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -($gap / 2);
+
+  .item {
+    @include gallery-item($columns);
+  }
+}
